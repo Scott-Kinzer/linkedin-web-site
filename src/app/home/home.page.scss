@@ -1,0 +1,27 @@
+:host {
+    justify-content: start;
+    position: unset;
+    overflow: unset;
+}
+
+.content-container {
+    display: flex;
+    max-width: 1128px;
+    margin: 40px auto 0;
+    height: 100%;
+}
+
+app-all-posts, .posts-divider {
+    margin: 0 12px;
+}
+
+.post-divider {
+    padding-top: 8px;
+    margin: 0 12px;
+}
+
+app-tabs {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

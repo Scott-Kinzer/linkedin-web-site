@@ -1,0 +1,139 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import '@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+.profile-modal {
+    --offset-y: 20px;
+
+    ion-card {
+     margin-inline: 0; 
+     margin-top: 0; 
+     margin-bottom: 0;
+    }
+}
+
+.start-post-modal {
+    --width: 552px;
+    --height: 400px;
+
+    app-modal {
+        width: 552px;
+        height: 400px;
+        background: white;
+    }
+
+
+    @media (max-width: 600px) {
+        --width: 352px;
+        --height: 450px;
+    
+        app-modal {
+            width: 352px;
+            height: 450px;
+        }
+    }
+}
+
+body {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: unset;
+    padding-right: unset;
+    padding-top: unset;
+    padding-bottom: unset;
+    position: unset;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    transform: unset;
+    text-rendering: optimizeLegibility;
+    overflow: unset;
+    touch-action: manipulation;
+    -webkit-user-drag: none;
+    -ms-content-zooming: none;
+    word-wrap: break-word;
+    overscroll-behavior-y: unset;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    background-color: #f3f2ef;
+}
+
+ion-app {
+    left: unset;
+    right: unset;
+    top: unset;
+    bottom: unset;
+    display: flex;
+    position: unset;
+    flex-direction: column;
+    justify-content: space-between;
+    contain: unset;
+    overflow: unset;
+    z-index: 0;
+    height: 100%;
+}
+
+.ion-page {
+    left: unset;
+    right: unset;
+    top: unset;
+    bottom: unset;
+    display: flex;
+    position: unset;
+    flex-direction: column;
+    justify-content: space-between;
+    contain: unset;
+    overflow: unset;
+    z-index: 0;
+}
+
+ion-router-outlet {
+    inset: unset;
+    position: unset;
+    contain: unset;
+    overflow: unset;
+    z-index: 0;
+}
+
+app-root {
+    display: block;
+    height: 100%;
+}
+
+app-auth, app-profile {
+    height: 100%;
+}
+
+ion-router-outlet {
+    height: 100%;
+}
+
+.ion-color.sc-ion-label-md-h {
+    color: grey;
+}
